@@ -16,4 +16,18 @@ $(document).ready(function () {
         elem.slideToggle();
     });
 
+    var bannerSlider = new Swiper('.banner-slider', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next-bs',
+            prevEl: '.swiper-button-prev-bs',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
 });
