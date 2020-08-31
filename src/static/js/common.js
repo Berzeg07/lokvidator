@@ -30,6 +30,35 @@ $(document).ready(function () {
         },
     });
 
+    var teamSlider = new Swiper('.team-slider', {
+        slidesPerView: 3,
+        spaceBetween: 155,
+        loop: true,
+
+        navigation: {
+            nextEl: '.swiper-button-next-ts',
+            prevEl: '.swiper-button-prev-ts',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            767: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1899: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        }
+    });
+
     var aboutSliser = undefined;
 
     function initAction() {
@@ -104,8 +133,50 @@ $(document).ready(function () {
 
     initAdvSlider();
 
-    $(window).on('resize', function () {
-        initAction();
-    });
+    var choiceSliser = undefined;
+
+    function initChoiceAction() {
+        var screenWidth = $(window).width();
+        if (screenWidth > 767 && choiceSliser == undefined) {
+            var choiceSliser = new Swiper('.choice-slider', {
+                slidesPerView: '5',
+                spaceBetween: 55,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next-ch',
+                    prevEl: '.swiper-button-prev-ch',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    991: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    1279: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1599: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    }
+                }
+            });
+        } else if (screenWidth < 768 && choiceSliser != undefined) {
+            choiceSliser.destroy();
+            choiceSliser = undefined;
+            // $('.scrollbar-slider__wrapper').removeAttr('style');
+            // $('.scrollbar-slider__slide').removeAttr('style');
+        }
+    }
+
+    initChoiceAction();
+
+    // $(window).on('resize', function () {
+    //     initAction();
+    // });
 
 });
