@@ -16,6 +16,10 @@ $(document).ready(function () {
         elem.slideToggle();
     });
 
+    $(".phone-inp").mask("+7(999)999-99-99");
+
+    $('.select-loan select').selectric();
+
     var bannerSlider = new Swiper('.banner-slider', {
         slidesPerView: 1,
         spaceBetween: 20,
