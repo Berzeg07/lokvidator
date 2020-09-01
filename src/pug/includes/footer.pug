@@ -1,9 +1,92 @@
 .footer
-    p Футер
+    .footer__top
+        .footer__column
+            .main-logo.footer__logo
+                .main-logo__img
+                    img(src="img/footer-logo.png")
+                ul.main-logo__article
+                    li
+                        |Ликвидатор №1
+                    li
+                        |банкротство ликвидация ООО
+            ul.footer-info
+                li
+                    a(href="tel:74991120757").phone-link +7 (499) 112-07-57
+                li
+                    .worktime с 9-00 до 20-00, по будням
 
+            .adress-info
+                |123112, Россия, Москва,<br> Пресненская наб., 12,<br> ММДЦ «Москва Сити»,<br> Башня Федерация-Восток, 43 этаж
 
+            .adress-metro.adress-metro_footer Деловой центр, Выставочная,<br> Международная, МЦК
 
-include ./footer-modals.pug
+        .footer__column
+            .footer__title Ликвидация ООО
+
+            ul.footer__list
+                li
+                    a(href="#") через оффшор
+                li
+                    a(href="#") без налоговой проверки
+                li
+                    a(href="#") с нулевым балансом
+                li
+                    a(href="#") с дебиторской задолжностью
+                li
+                    a(href="#") с единственным участником
+
+        .footer__column
+            .footer__title Ликвидация ИП
+
+            ul.footer__list
+                li
+                    a(href="#") через оффшор
+                li
+                    a(href="#") без налоговой проверки
+                li
+                    a(href="#") с нулевым балансом
+                li
+                    a(href="#") с дебиторской задолжностью
+                li
+                    a(href="#") с единственным участником
+
+        .footer__column
+            .footer__title Банкротство физ лица
+
+            ul.footer__list
+                li
+                    a(href="#") через оффшор
+                li
+                    a(href="#") без налоговой проверки
+                li
+                    a(href="#") с нулевым балансом
+
+        .footer__column
+            .footer__title Информация
+
+            ul.footer__list
+                li
+                    a(href="#") О компании
+                li
+                    a(href="#") Наша команда
+                li
+                    a(href="#") Вопросы и ответы
+                li
+                    a(href="#") Сертификаты
+                li
+                    a(href="#") Контакты
+                li
+                    a(href="#") Услуги
+                li
+                    a(href="#") Цены
+                li
+                    a(href="#") Субсидарка
+
+    .footer__bottom
+        .copy © 2020 Ликвидатор №1
+        .metr
+            img(src="img/metr.jpg")
+
 script(src="libs/jquery/jquery3.5.1.min.js")
 script(src="libs/swiper/swiper.min.js")
 script(src="libs/selectric/jquery.selectric.min.js")
