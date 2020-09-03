@@ -383,71 +383,198 @@
                     a(href="#") условия передачи информации
 
         li.price-table__column
-            ul.price-table__top
-                li Наименование услуги
-                li Срок исполнения
-                li Цена
-                li Онлайн запись
+            table.table-price(cellspacing="0")
+                thead
+                    tr
+                        th Наименование услуги
+                        th Сроки исполнения
+                        th Цена
+                        th Онлайн запись
+                tbody
+                    tr
+                        td
+                            .price-table__item Добровольная ликвидация - по решению учредителей
+                        td
+                            .price-table__mob-title Сроки исполнения
+                            .price-table__item.price-table__time 5 - 6 месяцев
+                        td
+                            .price-table__mob-title Цена
+                            .price-table__item.price-table__price  от 38 000 руб.
+                        td
+                            .price-table__item 
+                                img(src="img/check.png")
+                    tr
+                        td
+                            .price-table__item Ликвидация через смену директора и участника
+                        td
+                            .price-table__mob-title Сроки исполнения
+                            .price-table__item.price-table__time 5 - 6 месяцев
+                        td
+                            .price-table__mob-title Цена
+                            .price-table__item.price-table__price  от 38 000 руб.
+                        td
+                            .price-table__item 
+                                img(src="img/check.png")
+                    tr
+                        td
+                            .price-table__item Принудительная ликвидация - по решению суда
+                        td
+                            .price-table__mob-title Сроки исполнения
+                            .price-table__item.price-table__time 5 - 6 месяцев
+                        td
+                            .price-table__mob-title Цена
+                            .price-table__item.price-table__price  от 25 000 руб.
+                        td
+                            .price-table__item 
+                                img(src="img/check.png")
+                    tr
+                        td
+                            .price-table__item Добровольная ликвидация с гарантией отсутствия выездной налоговой проверки
+                        td
+                            .price-table__mob-title Сроки исполнения
+                            .price-table__item.price-table__time 5 - 6 месяцев
+                        td
+                            .price-table__mob-title Цена
+                            .price-table__item.price-table__price  от 300 000 руб.
+                        td
+                            .price-table__item 
+                                img(src="img/check.png")
+                    tr
+                        td
+                            .price-table__item Банкротство ООО
+                        td
+                            .price-table__mob-title Сроки исполнения
+                            .price-table__item.price-table__time 5 - 6 месяцев
+                        td
+                            .price-table__mob-title Цена
+                            .price-table__item.price-table__price  от 25 000 руб.
+                        td
+                            .price-table__item 
+                                img(src="img/check.png")
+            //- ul.price-table__top
+            //-     li Наименование услуги
+            //-     li Срок исполнения
+            //-     li Цена
+            //-     li Онлайн запись
 
-            ul.price-table__list
-                li
-                    .price-table__item
-                        .price-table__article Добровольная ликвидация - по решению учредителей
-                    .price-table__item
-                        .price-table__mob-title Сроки исполнения
-                        .price-table__time 5 - 6 месяцев
-                    .price-table__item
-                        .price-table__mob-title Цена
-                        .price-table__price от 38 000 руб.
-                    .price-table__item
-                        .price-table__check
-                li
-                    .price-table__item
-                        .price-table__article Ликвидация через смену директора и участника
-                    .price-table__item
-                        .price-table__mob-title Сроки исполнения
-                        .price-table__time 5 - 6 месяцев
-                    .price-table__item
-                        .price-table__mob-title Цена
-                        .price-table__price от 38 000 руб.
-                    .price-table__item
-                        .price-table__check
+            //- ul.price-table__list
+            //-     li
+            //-         .price-table__item
+            //-             .price-table__article Добровольная ликвидация - по решению учредителей
+            //-         .price-table__item
+            //-             .price-table__mob-title Сроки исполнения
+            //-             .price-table__time 5 - 6 месяцев
+            //-         .price-table__item
+            //-             .price-table__mob-title Цена
+            //-             .price-table__price от 38 000 руб.
+            //-         .price-table__item
+            //-             .price-table__check
+            //-     li
+            //-         .price-table__item
+            //-             .price-table__article Ликвидация через смену директора и участника
+            //-         .price-table__item
+            //-             .price-table__mob-title Сроки исполнения
+            //-             .price-table__time 5 - 6 месяцев
+            //-         .price-table__item
+            //-             .price-table__mob-title Цена
+            //-             .price-table__price от 38 000 руб.
+            //-         .price-table__item
+            //-             .price-table__check
 
-                li
-                    .price-table__item
-                        .price-table__article Принудительная ликвидация - по решению суда
-                    .price-table__item
-                        .price-table__mob-title Сроки исполнения
-                        .price-table__time 5 - 6 месяцев
-                    .price-table__item
-                        .price-table__mob-title Цена
-                        .price-table__price от 25 000 руб.
-                    .price-table__item
-                        .price-table__check
+            //-     li
+            //-         .price-table__item
+            //-             .price-table__article Принудительная ликвидация - по решению суда
+            //-         .price-table__item
+            //-             .price-table__mob-title Сроки исполнения
+            //-             .price-table__time 5 - 6 месяцев
+            //-         .price-table__item
+            //-             .price-table__mob-title Цена
+            //-             .price-table__price от 25 000 руб.
+            //-         .price-table__item
+            //-             .price-table__check
 
-                li
-                    .price-table__item
-                        .price-table__article Добровольная ликвидация с гарантией отсутствия выездной налоговой проверки
-                    .price-table__item
-                        .price-table__mob-title Сроки исполнения
-                        .price-table__time 5 - 6 месяцев
-                    .price-table__item
-                        .price-table__mob-title Цена
-                        .price-table__price от 300 000 руб.
-                    .price-table__item
-                        .price-table__check
+            //-     li
+            //-         .price-table__item
+            //-             .price-table__article Добровольная ликвидация с гарантией отсутствия выездной налоговой проверки
+            //-         .price-table__item
+            //-             .price-table__mob-title Сроки исполнения
+            //-             .price-table__time 5 - 6 месяцев
+            //-         .price-table__item
+            //-             .price-table__mob-title Цена
+            //-             .price-table__price от 300 000 руб.
+            //-         .price-table__item
+            //-             .price-table__check
 
-                li
-                    .price-table__item
-                        .price-table__article Банкротство ООО
-                    .price-table__item
-                        .price-table__mob-title Сроки исполнения
-                        .price-table__time 5 - 6 месяцев
-                    .price-table__item
-                        .price-table__mob-title Цена
-                        .price-table__price от 25 000 руб.
-                    .price-table__item
-                        .price-table__check
+            //-     li
+            //-         .price-table__item
+            //-             .price-table__article Банкротство ООО
+            //-         .price-table__item
+            //-             .price-table__mob-title Сроки исполнения
+            //-             .price-table__time 5 - 6 месяцев
+            //-         .price-table__item
+            //-             .price-table__mob-title Цена
+            //-             .price-table__price от 25 000 руб.
+            //-         .price-table__item
+            //-             .price-table__check
+
+//- table.table-price(cellspacing="0")
+//-     thead
+//-         tr
+//-             th Наименование услуги
+//-             th Сроки исполнения
+//-             th Цена
+//-             th Онлайн запись
+//-     tbody
+//-         tr
+//-             td
+//-                 .price-table__item Добровольная ликвидация - по решению учредителей
+//-             td
+//-                 .price-table__item 5 - 6 месяцев
+//-             td
+//-                 .price-table__item от 38 000 руб.
+//-             td
+//-                 .price-table__item 
+//-                     img(src="img/check.png")
+//-         tr
+//-             td
+//-                 .price-table__item Ликвидация через смену директора и участника
+//-             td
+//-                 .price-table__item 5 - 6 месяцев
+//-             td
+//-                 .price-table__item от 38 000 руб.
+//-             td
+//-                 .price-table__item 
+//-                     img(src="img/check.png")
+//-         tr
+//-             td
+//-                 .price-table__item Принудительная ликвидация - по решению суда
+//-             td
+//-                 .price-table__item 5 - 6 месяцев
+//-             td
+//-                 .price-table__item от 25 000 руб.
+//-             td
+//-                 .price-table__item 
+//-                     img(src="img/check.png")
+//-         tr
+//-             td
+//-                 .price-table__item Добровольная ликвидация с гарантией отсутствия выездной налоговой проверки
+//-             td
+//-                 .price-table__item 5 - 6 месяцев
+//-             td
+//-                 .price-table__item от 300 000 руб.
+//-             td
+//-                 .price-table__item 
+//-                     img(src="img/check.png")
+//-         tr
+//-             td
+//-                 .price-table__item Банкротство ООО
+//-             td
+//-                 .price-table__item 5 - 6 месяцев
+//-             td
+//-                 .price-table__item от 25 000 руб.
+//-             td
+//-                 .price-table__item 
+//-                     img(src="img/check.png")
 
 .request.container
     .request__item.request__item_left

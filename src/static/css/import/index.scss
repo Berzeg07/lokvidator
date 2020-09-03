@@ -1944,6 +1944,7 @@
 
     @media(max-width: 1279px) {
         order: 2;
+        margin-bottom: 25px;
     }
 }
 
@@ -1962,7 +1963,7 @@
 
     @media(max-width: 1279px) {
         order: 1;
-        padding-bottom: 400px;
+        padding-bottom: 240px;
     }
 }
 
@@ -2109,5 +2110,100 @@
 .metr {
     @media(max-width: 991px) {
         display: none;
+    }
+}
+
+.table-price {
+    width: 100%;
+
+    @media(max-width: 991px) {
+        margin-bottom: 25px;
+    }
+
+    thead {
+        color: #374957;
+        font-weight: 600;
+        font-size: 16px;
+
+        @media(max-width: 991px) {
+            display: none;
+        }
+
+        tr {
+            background: none;
+
+            th {
+                text-align: center;
+                padding: 10px 0px;
+
+                &:first-child {
+                    text-align: left;
+                    padding-left: 24px;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            background: white;
+
+            @media(max-width: 991px) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-bottom: 30px;
+                border-radius: 4px;
+                padding: 18px;
+            }
+
+            td {
+                text-align: center;
+
+                @media(min-width: 992px) {
+                    border-bottom: 25px solid #D5D8E4;
+                    padding: 25px 0px;
+                }
+
+                @media(max-width: 991px) {
+                    display: block;
+                }
+
+                &:first-child {
+                    text-align: center;
+                    color: #374957;
+                    font-size: 16px;
+
+                    @media(max-width: 991px) {
+                        margin-bottom: 17px;
+                        width: 100%;
+                    }
+
+                    @media(min-width: 992px) {
+                        padding-left: 24px;
+                        text-align: left;
+                        width: 50%;
+                    }
+                }
+
+                &:nth-child(2) {
+                    @media(max-width: 991px) {
+                        width: 50%;
+                    }
+                }
+
+                &:nth-child(3) {
+                    @media(max-width: 991px) {
+                        width: 50%;
+                    }
+                }
+
+                &:last-child {
+                    @media(max-width: 991px) {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }
