@@ -16,6 +16,17 @@ $(document).ready(function () {
         elem.slideToggle();
     });
 
+    $(function () {
+        $(".scroll-btn").click(function (e) {
+            e.preventDefault();
+            // var currentBlock = $(this).attr("href");
+            currentBlockoffset = $('.request').offset().top;
+            $("html, body").animate({
+                scrollTop: currentBlockoffset
+            }, 500);
+        });
+    });
+
     $(".phone-inp").mask("+7(999)999-99-99");
 
     $('.select-loan select').selectric();
